@@ -1,0 +1,19 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["title", "artistId", "songs", "releaseDate", "createdAt", "updatedAt"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "title": { "bsonType": "string", "minLength": 1 },
+      "artistId": { "bsonType": "objectId" },
+      "songs": {
+        "bsonType": "array",
+        "items": { "bsonType": "objectId" }
+      },
+      "releaseDate": { "bsonType": "date" },
+      "coverImage": { "bsonType": "string" },
+      "createdAt": { "bsonType": "date" },
+      "updatedAt": { "bsonType": "date" }
+    }
+  }
+}

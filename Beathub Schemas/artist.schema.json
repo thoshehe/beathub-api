@@ -1,0 +1,17 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["name", "genres", "createdAt", "updatedAt"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "name": { "bsonType": "string", "minLength": 1 },
+      "bio": { "bsonType": "string" },
+      "genres": {
+        "bsonType": "array",
+        "items": { "bsonType": "string" }
+      },
+      "createdAt": { "bsonType": "date" },
+      "updatedAt": { "bsonType": "date" }
+    }
+  }
+}

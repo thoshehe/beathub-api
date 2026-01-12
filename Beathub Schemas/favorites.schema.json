@@ -1,0 +1,28 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["userId", "favoriteArtists", "favoriteSongs", "favoriteAlbums", "favoritePlaylists", "createdAt", "updatedAt"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "userId": { "bsonType": "objectId" },
+      "favoriteArtists": {
+        "bsonType": "array",
+        "items": { "bsonType": "objectId" }
+      },
+      "favoriteSongs": {
+        "bsonType": "array",
+        "items": { "bsonType": "objectId" }
+      },
+      "favoriteAlbums": {
+        "bsonType": "array",
+        "items": { "bsonType": "objectId" }
+      },
+      "favoritePlaylists": {
+        "bsonType": "array",
+        "items": { "bsonType": "objectId" }
+      },
+      "createdAt": { "bsonType": "date" },
+      "updatedAt": { "bsonType": "date" }
+    }
+  }
+}

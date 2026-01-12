@@ -1,0 +1,20 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["title", "artistId", "duration", "genres", "releaseDate", "createdAt", "updatedAt"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "title": { "bsonType": "string", "minLength": 1 },
+      "artistId": { "bsonType": "objectId" },
+      "albumId": { "bsonType": "objectId" },
+      "duration": { "bsonType": "int", "minimum": 0 },
+      "genres": {
+        "bsonType": "array",
+        "items": { "bsonType": "string" }
+      },
+      "releaseDate": { "bsonType": "date" },
+      "createdAt": { "bsonType": "date" },
+      "updatedAt": { "bsonType": "date" }
+    }
+  }
+}
